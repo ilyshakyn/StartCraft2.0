@@ -19,6 +19,7 @@ namespace Assets.StartCraft2.Scripts.ResourseSoawner
 
         private List<GameObject> activeResources = new List<GameObject>();
 
+        public static int timeForSpawn = 2;
         private void Awake()
         {
             if (Instance == null) Instance = this;
@@ -32,7 +33,7 @@ namespace Assets.StartCraft2.Scripts.ResourseSoawner
         {
             SpawnInitialResources();
         }
-
+      
         public void SpawnInitialResources()
         {
             foreach (var point in spawnPoints)
@@ -90,7 +91,7 @@ namespace Assets.StartCraft2.Scripts.ResourseSoawner
 
         private IEnumerator SpawnPoTime(GameObject resource)
         {
-            yield return new WaitForSeconds(2);
+            yield return new WaitForSeconds(timeForSpawn);
             ResourceSpawner.Respawn(resource);
         }
         

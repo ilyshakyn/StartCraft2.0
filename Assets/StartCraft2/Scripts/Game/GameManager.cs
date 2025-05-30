@@ -1,14 +1,18 @@
+using Assets.StartCraft2.Scripts.Drone;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
+
     public static GameManager Instance;
 
+   
     public int totalDelivered = 0;
     public int DroneCount { get; private set; } = 3; 
-    private void Awake()
+    private void Awake()    
     {
         if (Instance == null) Instance = this;
         else Destroy(gameObject);
@@ -18,7 +22,7 @@ public class GameManager : MonoBehaviour
     public void ResourceDelivered()
     {
         totalDelivered++;
-     
+        DroneGamesLogic.TextCount(totalDelivered);
     }
 
     public void SetDroneCount(int count)

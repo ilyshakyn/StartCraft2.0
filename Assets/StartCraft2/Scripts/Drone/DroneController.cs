@@ -39,6 +39,7 @@ namespace Assets.StartCraft2.Scripts.Drone
 
         private void Start()
         {
+           
             stateMachine = new DroneStateMachine();
             stateMachine.SetState(new DroneIdleState(this, stateMachine));
         }

@@ -80,6 +80,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 98d026763308dfe49b24755e1450e555, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  settings: {fileID: 11400000, guid: ee44c4fa50dc6f942920adcd7de95a06, type: 2}
 --- !u!114 &7062719186160139557
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -92,6 +93,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb08ec47556b9454abff63741c1a4f45, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  settings: {fileID: 11400000, guid: ee44c4fa50dc6f942920adcd7de95a06, type: 2}
 --- !u!114 &2367214325913923895
 MonoBehaviour:
   m_ObjectHideFlags: 0
